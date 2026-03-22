@@ -20,9 +20,9 @@ CLI tool to download 1-minute OHLCV (Open, High, Low, Close, Volume) candlestick
 ## Usage
 
 ```bash
-python fetch.py SPY QQQ --date 2026-03-22
-python fetch.py SPY --from 2026-03-01 --to 2026-03-22
-python fetch.py SPY --date 2026-03-22 --time 09:30-16:00 --out ./data
+uv run python fetch.py SPY QQQ --date 2026-03-22
+uv run python fetch.py SPY --from 2026-03-01 --to 2026-03-22
+uv run python fetch.py SPY --date 2026-03-22 --time 09:30-16:00 --out ./data
 ```
 
 **CLI Arguments:**

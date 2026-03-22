@@ -6,13 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Single date
-python fetch.py SPY QQQ --date 2026-03-22
+uv run python fetch.py SPY QQQ --date 2026-03-22
 
 # Date range with time window
-python fetch.py SPY --from 2026-03-01 --to 2026-03-22 --time 09:30-16:00
+uv run python fetch.py SPY --from 2026-03-01 --to 2026-03-22 --time 09:30-16:00
 
 # Custom output directory
-python fetch.py SPY --date 2026-03-22 --out ./data
+uv run python fetch.py SPY --date 2026-03-22 --out ./data
 ```
 
 Requires `MASSIVE_API_KEY` in `.env` or shell environment. Copy `.env.example` to `.env` to get started.
